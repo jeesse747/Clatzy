@@ -22,6 +22,9 @@ public class Curso extends Producto {
         this.instructores = new ArrayList<>();
         this.productosCliente = new ArrayList<>();
         
+        this.instructores.add(instructor);
+        
+        
     }
     
     

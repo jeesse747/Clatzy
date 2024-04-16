@@ -27,6 +27,20 @@ public class Producto {
         this.fechaFin = null;
         this.estadoActivo = false;
     }
+
+    public Producto(String nombre, LocalDate fechaInicio, float valor) {
+        
+        this.id = 0;
+        this.nombre = nombre;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = null;
+        this.valor = valor;
+        this.estadoActivo = false;
+        
+    }
+    
+    
+    
     
     
     

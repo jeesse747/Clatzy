@@ -49,6 +49,12 @@ public class Clatzy {
         
     }
     
+    public boolean addPlan(String nombre, LocalDate fechaInicio, float valor, float valorMaximoCurso){
+        
+        this.planes.add(new Plan(nombre, fechaInicio,valor,valorMaximoCurso));
+        return true;
+    }
+    
     
     
 }

@@ -5,6 +5,7 @@
 package core.persona;
 
 import core.producto.Curso;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 
@@ -20,8 +21,17 @@ public class Instructor extends Persona {
         super(nombre, cedula, telefono, email);
         this.cursos = new ArrayList<>();
         
+        
+        
     }
-
+    
+    public boolean addCurso(int id, String nombre, LocalDate fechaInicio,float valor,Instructor instructor){
+        
+        Curso curso = new Curso(id ,nombre, fechaInicio, valor, instructor);
+        this.cursos.add(curso);
+        return true;
+        
+    }
     
     
     
