@@ -19,6 +19,8 @@ public class Curso extends Producto {
 
     public Curso(int id, String nombre, LocalDate fechaInicio, float valor, Instructor instructor) {
         super(id, nombre, fechaInicio, valor);
+        this.instructores = new ArrayList<>();
+        this.productosCliente = new ArrayList<>();
         
     }
     

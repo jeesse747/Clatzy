@@ -42,7 +42,11 @@ public class Clatzy {
     }
     
     public boolean addCurso(int id, String nombre, LocalDate fechaInicio,float valor,Instructor instructor){
+        
         Curso curso = new Curso(id ,nombre, fechaInicio, valor, instructor);
+        this.cursos.add(curso);
+        return true;
+        
     }
     
     
