@@ -4,10 +4,25 @@
  */
 package core.persona;
 
+import core.producto.Curso;
+import java.util.ArrayList;
+
 /**
  *
  * @author Carlos Ruidiaz M
  */
-public class Instructor {
+public class Instructor extends Persona {
+    
+    private ArrayList <Curso> cursos;
+
+    public Instructor(String nombre, String cedula, String telefono, String email) {
+        super(nombre, cedula, telefono, email,Instructor instructor);
+        this.cursos = new ArrayList<>();
+        
+    }
+
+    
+    
+    
     
 }

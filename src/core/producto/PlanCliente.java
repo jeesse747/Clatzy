@@ -4,10 +4,15 @@
  */
 package core.producto;
 
+import core.persona.Cliente;
+
 /**
  *
  * @author Carlos Ruidiaz M
  */
 public class PlanCliente {
+ 
+    private Cliente cliente;
+    private Plan plan;
     
 }

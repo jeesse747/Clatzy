@@ -12,9 +12,15 @@ import java.util.ArrayList;
  *
  * @author Carlos Ruidiaz M
  */
-public class Cliente {
+public class Cliente extends Persona {
     
     private ArrayList<PlanCliente> planes;
     private ArrayList<ProductoCliente> productos;
+
+    public Cliente(String nombre, String cedula, String telefono, String email) {
+        super(nombre, cedula, telefono, email);
+        
+        
+    }
     
 }
