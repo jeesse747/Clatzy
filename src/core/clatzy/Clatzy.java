@@ -55,6 +55,25 @@ public class Clatzy {
         return true;
     }
     
+    public boolean addCliente( String nombre, String cedula, String telefono, String email ){
+        Cliente cliente = new Cliente(nombre, cedula, telefono, email);
+        this.clientes.add(cliente);
+        return true;
+        
+    }
+    
+    public Cliente getCliente(int index){
+        return this.clientes.get(index);
+    }
+    
+    public Plan getPlan(int index){
+        return this.planes.get(index);
+    }
+    
+    public void comprarPlan(Cliente cliente, Plan plan, LocalDate date){
+        
+        
+    }
     
     
 }

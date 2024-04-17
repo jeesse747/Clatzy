@@ -10,7 +10,7 @@ import java.time.LocalDate;
  *
  * @author Carlos Ruidiaz M
  */
-public class Producto {
+public abstract class Producto {
     
     protected int id;
     protected String nombre;
@@ -38,6 +38,8 @@ public class Producto {
         this.estadoActivo = false;
         
     }
+
+    
     
     
     

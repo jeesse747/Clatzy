@@ -19,8 +19,32 @@ public class Cliente extends Persona {
 
     public Cliente(String nombre, String cedula, String telefono, String email) {
         super(nombre, cedula, telefono, email);
+        this.planes = new ArrayList<>();
+        this.productos = new ArrayList<>();
+        
         
         
     }
+    
+    public boolean addPlan (PlanCliente plan){
+        
+        this.planes.add(plan);
+        return true;
+        
+    }
+    
+    public boolean addProducto (ProductoCliente producto){
+        
+        this.productos.add(producto);
+        return true;
+        
+    }
+    
+    public PlanCliente getPlan(int index){
+        return this.planes.get(index);       
+    }
+
+    
+    
     
 }
