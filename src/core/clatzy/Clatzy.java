@@ -70,7 +70,17 @@ public class Clatzy {
         return this.planes.get(index);
     }
     
-    public void comprarPlan(Cliente cliente, Plan plan, LocalDate date){
+    public boolean comprarPlan(Cliente cliente, Plan plan, LocalDate date){
+        if(!cliente.hasplanactivo()){
+            
+        }
+        
+        return true;
+        
+    }
+    
+    public Curso getCurso(int index){
+        return this.cursos.get(index);
         
         
     }

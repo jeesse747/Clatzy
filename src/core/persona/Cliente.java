@@ -46,5 +46,12 @@ public class Cliente extends Persona {
 
     
     
+    public boolean hasplanactivo (){
+        for (PlanCliente plan : this.planes) {
+            if(plan.)
+        }
+        
+    }
+    
     
 }
